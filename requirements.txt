@@ -1,0 +1,7 @@
+discord.py[voice]>=2.5,<3
+discord-ext-voice-recv==0.5.2a179
+openai>=1.50,<3
+python-dotenv>=1.0,<2
+faster-whisper>=1.1,<2
+pyttsx3>=2.90,<3
+imageio-ffmpeg>=0.5,<1

@@ -1,0 +1,25 @@
+services:
+  - type: worker
+    name: acegpt
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: AI_API_KEY
+        sync: false
+      - key: AI_BASE_URL
+        value: https://api.perplexity.ai/v1
+      - key: AI_API_MODE
+        value: responses
+      - key: AI_PRESET
+        value: fast
+      - key: BOT_PERSONALITY
+        value: You are AceGPT, a friendly, clever, concise Discord assistant.
+      - key: MAX_HISTORY_MESSAGES
+        value: "20"
+      - key: MAX_IMAGE_MB
+        value: "8"
+      - key: VOICE_TTS_ENABLED
+        value: "true"
